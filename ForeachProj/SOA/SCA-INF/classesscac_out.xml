@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='forEach'][@name='ForEach_Activity']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='finalCounterValue']</loc>
+      <line>80</line>
+      <col/>
+      <file>BPEL/ForeachBPEL.bpel</file>
+      <name>BPEL/ForeachBPEL.bpel</name>
+      <fix>Make sure that the expression in &lt;bpel:finalCounterValue> is a unsigned integer expression.</fix>
+      <msg>The expression $inputVariable.payload/ns1:Input in &lt;bpel:finalCounterValue> is not a unsigned integer expression.</msg>
+   </Fault>
+</Faults>
